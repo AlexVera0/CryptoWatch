@@ -1,0 +1,53 @@
+# ===== 敏感文件（绝对不能提交）=====
+.env
+*.env
+
+# ===== Python 缓存 =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# ===== 虚拟环境 =====
+venv/
+env/
+.venv/
+.env/
+
+# ===== 数据缓存（parquet文件可能很大）=====
+data/cache/
+data/raw/
+*.parquet
+*.duckdb
+
+# ===== 模型文件 =====
+models/*.pkl
+models/*.joblib
+models/*.json
+models/*.ubj
+
+# ===== 日志和报告 =====
+logs/
+reports/
+*.log
+
+# ===== IDE =====
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== 测试覆盖率 =====
+.coverage
+htmlcov/
+.pytest_cache/
+
+# ===== 临时文件 =====
+tmp/
+temp/
+*.tmp

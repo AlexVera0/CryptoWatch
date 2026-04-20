@@ -1,0 +1,43 @@
+# ============================================================
+# CryptoWatch V4 — Python 依赖（固定版本，防止升级破坏）
+# Python >= 3.10
+# 安装命令: pip install -r requirements.txt
+# ============================================================
+
+# ---- 核心数据处理 ----
+pandas
+numpy
+pyarrow                  # parquet 读写
+
+# ---- 交易所接口 ----
+requests                 # 直接调用 Binance REST API
+
+# ---- 技术指标 ----
+pandas-ta                # RSI/MACD/ATR等技术指标
+
+# ---- 机器学习 ----
+scikit-learn
+xgboost
+imbalanced-learn         # 处理类别不平衡
+
+# ---- 回测 ----
+backtesting              # Backtesting.py 轻量回测框架
+
+# ---- 报告可视化 ----
+plotly                   # 交互式图表（HTML报告）
+jinja2                   # HTML模板渲染
+
+# ---- 配置与工具 ----
+python-dotenv            # 读取 .env 文件
+filelock                 # 文件锁（防多线程数据损坏）
+joblib                   # 模型持久化 + 并行
+
+# ---- 调度 ----
+schedule                 # 轻量定时任务
+
+# ---- 日志 ----
+loguru                   # 结构化日志
+
+# ---- 统计检验 ----
+scipy                    # PSI计算、统计检验
+statsmodels              # 时间序列相关测试
